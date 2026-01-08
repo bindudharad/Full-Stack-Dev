@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Part 13 - Miscellaneous & Remaining HTML5 Tags</title>
+</head>
+<body>
+
+    <!-- abbr -->
+    <p><abbr title="Hyper Text Markup Language">HTML</abbr> is a markup language</p>
+
+    <!-- address -->
+    <address>
+        Written by Bindudhara D<br>
+        India
+    </address>
+
+    <!-- time -->
+    <p>Class starts at <time datetime="09:00">9 AM</time></p>
+
+    <!-- progress -->
+    <label>Course Progress:</label>
+    <progress value="70" max="100"></progress>
+
+    <br><br>
+
+    <!-- meter -->
+    <label>Battery Level:</label>
+    <meter value="0.6">60%</meter>
+
+    <br><br>
+
+    <!-- bdi -->
+    <p>User name: <bdi>علي</bdi></p>
+
+    <!-- bdo -->
+    <p><bdo dir="rtl">This text is right to left</bdo></p>
+
+    <!-- ruby, rt, rp -->
+    <ruby>
+        漢 <rt>Kan</rt>
+        字 <rt>Ji</rt>
+    </ruby>
+
+    <br><br>
+
+    <!-- wbr -->
+    <p>
+        ThisIsAVeryLongWord<wbr>ThatCanBreakHereIfNeeded
+    </p>
+
+    <!-- map & area -->
+    <img src="https://via.placeholder.com/200" usemap="#imagemap" alt="Map Image">
+
+    <map name="imagemap">
+        <area shape="rect" coords="0,0,100,100" href="https://www.google.com" alt="Google">
+        <area shape="rect" coords="100,0,200,100" href="https://www.example.com" alt="Example">
+    </map>
+
+    <!-- embed -->
+    <embed src="sample.pdf" width="300" height="200">
+
+    <br><br>
+
+    <!-- object & param -->
+    <object data="sample.pdf" type="application/pdf" width="300" height="200">
+        <param name="zoom" value="100">
+        PDF cannot be displayed
+    </object>
+
+</body>
+</html>

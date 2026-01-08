@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Part 4 - Links & Media Tags</title>
+</head>
+<body>
+
+    <!-- Anchor (Link) -->
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <br><br>
+
+    <!-- Image -->
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+
+    <br><br>
+
+    <!-- Image as Link -->
+    <a href="https://www.example.com">
+        <img src="https://via.placeholder.com/100" alt="Linked Image">
+    </a>
+
+    <br><br>
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+    </audio>
+
+    <br><br>
+
+    <!-- Video -->
+    <video width="300" controls>
+        <source src="sample.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <!-- Video with Subtitles -->
+    <video width="300" controls>
+        <source src="sample.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+    <br><br>
+
+    <!-- Picture (Responsive Image) -->
+    <picture>
+        <source media="(max-width:600px)" srcset="small.jpg">
+        <source media="(min-width:601px)" srcset="large.jpg">
+        <img src="default.jpg" alt="Responsive Image">
+    </picture>
+
+    <br><br>
+
+    <!-- Figure and Figcaption -->
+    <figure>
+        <img src="https://via.placeholder.com/120" alt="Figure Image">
+        <figcaption>Figure Caption Text</figcaption>
+    </figure>
+
+</body>
+</html>

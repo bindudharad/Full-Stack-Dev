@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Part 7 - Form Tags</title>
+</head>
+<body>
+
+    <h2>HTML Form Example</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female<br><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript<br><br>
+
+            <label for="course">Course:</label><br>
+            <select id="course">
+                <optgroup label="Frontend">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option>Node.js</option>
+                    <option>PHP</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+            <label for="browser">Choose Browser:</label><br>
+            <input list="browsers" id="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+            </datalist><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

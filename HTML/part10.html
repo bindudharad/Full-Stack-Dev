@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Part 10 - Template & Slot Tags</title>
+</head>
+<body>
+
+    <!-- Template (hidden content) -->
+    <template id="cardTemplate">
+        <div style="border:1px solid #000; padding:10px; width:200px;">
+            <h3><slot name="title"></slot></h3>
+            <p><slot name="content"></slot></p>
+        </div>
+    </template>
+
+    <!-- Button to show template content -->
+    <button onclick="showCard()">Show Template Content</button>
+
+    <!-- Output area -->
+    <div id="output"></div>
+
+    <script>
+        function showCard() {
+            const template = document.getElementById("cardTemplate");
+            const clone = template.content.cloneNode(true);
+
+            clone.querySelector('slot[name="title"]')
+                 .replaceWith(document.createTextNode("HTML Template"));
+
+            clone.querySelector('slot[name="content"]')
+                 .replaceWith(document.createTextNode("This content comes from template."));
+
+            document.getElementById("output").appendChild(clone);
+        }
+    </script>
+
+</body>
+</html>

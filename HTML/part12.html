@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Part 12 - Common Attributes</title>
+
+    <style>
+        .highlight {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- id attribute (unique) -->
+    <h2 id="mainTitle">ID Attribute Example</h2>
+
+    <!-- class attribute (can repeat) -->
+    <p class="highlight">This paragraph uses class attribute</p>
+    <p class="highlight">This is another paragraph with same class</p>
+
+    <!-- style attribute (inline CSS) -->
+    <p style="color:red; font-weight:bold;">
+        This text uses style attribute
+    </p>
+
+    <!-- title attribute (tooltip) -->
+    <button title="Click this button">
+        Hover Me
+    </button>
+
+    <br><br>
+
+    <!-- hidden attribute -->
+    <p hidden>This text is hidden</p>
+
+    <!-- data-* attribute -->
+    <button data-user="Bindu" data-role="Student" onclick="showData(this)">
+        Show Data Attribute
+    </button>
+
+    <p id="output"></p>
+
+    <script>
+        function showData(btn) {
+            document.getElementById("output").innerText =
+                "User: " + btn.dataset.user + ", Role: " + btn.dataset.role;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Most Common & Important HTML Tags</title>
+
+    <!-- meta tag: makes page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- internal CSS just for readability -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: darkblue;
+        }
+        code {
+            background: #f2f2f2;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- header: top part of the page -->
+<header>
+    <h1>Most Common & Important HTML Tags</h1>
+    <p>This single page shows commonly used HTML tags with simple explanation.</p>
+</header>
+
+<!-- nav: navigation links -->
+<nav>
+    <a href="#text">Text</a> |
+    <a href="#media">Media</a> |
+    <a href="#list">Lists</a> |
+    <a href="#form">Forms</a> |
+    <a href="#semantic">Semantic</a>
+</nav>
+
+<hr>
+
+<!-- main: main content -->
+<main>
+
+<!-- ================= TEXT TAGS ================= -->
+<section id="text">
+    <h2>1. Text & Formatting Tags</h2>
+
+    <p><code>&lt;h1&gt;–&lt;h6&gt;</code> : Headings</p>
+    <h3>This is a heading</h3>
+
+    <p><code>&lt;p&gt;</code> : Paragraph</p>
+    <p>This is a paragraph of text.</p>
+
+    <p><code>&lt;b&gt;</code> : Bold (visual)</p>
+    <b>Bold Text</b>
+
+    <p><code>&lt;strong&gt;</code> : Important text</p>
+    <strong>Important Text</strong>
+
+    <p><code>&lt;em&gt;</code> : Emphasis</p>
+    <em>Emphasized Text</em>
+
+    <p><code>&lt;br&gt;</code> : Line break<br>Used here</p>
+
+    <p><code>&lt;hr&gt;</code> : Horizontal line</p>
+</section>
+
+<!-- ================= LINKS & MEDIA ================= -->
+<section id="media">
+    <h2>2. Links & Media Tags</h2>
+
+    <p><code>&lt;a&gt;</code> : Link</p>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <p><code>&lt;img&gt;</code> : Image</p>
+    <img src="https://via.placeholder.com/120" alt="Sample Image">
+
+    <p><code>&lt;audio&gt;</code> : Audio</p>
+    <audio controls>
+        <source src="sample.mp3">
+    </audio>
+
+    <p><code>&lt;video&gt;</code> : Video</p>
+    <video width="200" controls>
+        <source src="sample.mp4">
+    </video>
+</section>
+
+<!-- ================= LISTS ================= -->
+<section id="list">
+    <h2>3. List Tags</h2>
+
+    <p><code>&lt;ul&gt;</code> : Unordered List</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <p><code>&lt;ol&gt;</code> : Ordered List</p>
+    <ol>
+        <li>Learn</li>
+        <li>Practice</li>
+    </ol>
+</section>
+
+<!-- ================= FORMS ================= -->
+<section id="form">
+    <h2>4. Form Tags</h2>
+
+    <form>
+        <p><code>&lt;label&gt;</code> + <code>&lt;input&gt;</code></p>
+        <label>Name:</label><br>
+        <input type="text"><br><br>
+
+        <p><code>&lt;textarea&gt;</code></p>
+        <textarea rows="3"></textarea><br><br>
+
+        <p><code>&lt;select&gt;</code> + <code>&lt;option&gt;</code></p>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+        </select><br><br>
+
+        <p><code>&lt;button&gt;</code></p>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- ================= SEMANTIC TAGS ================= -->
+<section id="semantic">
+    <h2>5. Semantic HTML5 Tags</h2>
+
+    <p><code>&lt;header&gt;</code> : Top section of page</p>
+    <p><code>&lt;nav&gt;</code> : Navigation links</p>
+    <p><code>&lt;main&gt;</code> : Main content</p>
+    <p><code>&lt;section&gt;</code> : Group of content</p>
+    <p><code>&lt;article&gt;</code> : Independent content</p>
+    <p><code>&lt;aside&gt;</code> : Side content</p>
+    <p><code>&lt;footer&gt;</code> : Bottom section</p>
+
+    <article>
+        <h3>Article Example</h3>
+        <p>This is an article tag example.</p>
+    </article>
+</section>
+
+</main>
+
+<!-- aside: side information -->
+<aside>
+    <p>This is aside content (extra information).</p>
+</aside>
+
+<!-- footer: bottom of page -->
+<footer>
+    <p>© 2026 HTML Learning Page</p>
+</footer>
+
+<!-- script: JavaScript -->
+<script>
+    console.log("HTML page loaded");
+</script>
+
+<!-- noscript: shown if JS disabled -->
+<noscript>
+    JavaScript is disabled in your browser.
+</noscript>
+
+</body>
+</html>

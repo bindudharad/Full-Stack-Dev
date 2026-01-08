@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Part 9 - Interactive & Script Tags</title>
+</head>
+<body>
+
+    <!-- Details & Summary -->
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML is used to create the structure of web pages.</p>
+    </details>
+
+    <br>
+
+    <!-- Dialog -->
+    <button onclick="myDialog.showModal()">Open Dialog</button>
+
+    <dialog id="myDialog">
+        <p>This is a dialog popup</p>
+        <button onclick="myDialog.close()">Close</button>
+    </dialog>
+
+    <br><br>
+
+    <!-- Canvas -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+    <!-- SVG -->
+    <svg width="200" height="100">
+        <rect x="10" y="10" width="150" height="60" fill="green"></rect>
+    </svg>
+
+    <!-- Iframe -->
+    <iframe src="https://example.com" width="300" height="150"></iframe>
+
+    <!-- Script -->
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 50);
+    </script>
+
+    <!-- Noscript -->
+    <noscript>
+        JavaScript is disabled in your browser.
+    </noscript>
+
+</body>
+</html>
